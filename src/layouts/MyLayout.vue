@@ -27,6 +27,24 @@
     >
       <q-list>
         <q-item-label header>Essential Links</q-item-label>
+        <q-item clickable to="/">
+          <q-item-section avatar>
+            <q-icon name="camera_alt" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Read QRCode</q-item-label>
+            <q-item-label caption></q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-item clickable to="generator">
+          <q-item-section avatar>
+            <q-icon name="select_all" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>QRCode Generator</q-item-label>
+            <q-item-label caption></q-item-label>
+          </q-item-section>
+        </q-item>
         <q-item clickable tag="a" target="_blank" href="https://quasar.dev">
           <q-item-section avatar>
             <q-icon name="school" />
