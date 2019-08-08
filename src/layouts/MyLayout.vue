@@ -27,7 +27,7 @@
     >
       <q-list>
         <q-item-label header>Essential Links</q-item-label>
-        <q-item clickable to="/">
+        <q-item clickable to="/" exact>
           <q-item-section avatar>
             <q-icon name="camera_alt" />
           </q-item-section>
@@ -36,7 +36,7 @@
             <q-item-label caption></q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable to="generator">
+        <q-item clickable to="generator" exact>
           <q-item-section avatar>
             <q-icon name="select_all" />
           </q-item-section>
