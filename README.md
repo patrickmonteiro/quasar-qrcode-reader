@@ -2,6 +2,11 @@
 
 A Quasar Framework app
 
+## Dependencies Used
+- [vue-qrcode-reader](https://www.npmjs.com/package/vue-qrcode-reader)
+
+- [vue-qriously](https://www.npmjs.com/package/vue-qriously)
+
 ## Install the dependencies
 ```bash
 npm install
@@ -12,15 +17,8 @@ npm install
 quasar dev
 ```
 
-### Lint the files
-```bash
-npm run lint
-```
+### Prints
 
-### Build the app for production
-```bash
-quasar build
-```
+<img src="https://github.com/patrickmonteiro/quasar-qrcode-reader/blob/master/docs/logo1.png?raw=true&"  height="400">
 
-### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+<img src="https://github.com/patrickmonteiro/quasar-qrcode-reader/blob/master/docs/logo2.png?raw=true&"  height="400">
