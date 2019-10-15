@@ -1,7 +1,8 @@
 <template>
   <q-page class="row full-height items-center">
     <div class="col text-center">
-      <q-btn color="black" icon="camera_alt" label="Read QRCode"
+      <span class="text-subtitle1 text-grey-9">Press the button and scan a qrcode.</span>
+      <q-btn color="blue-grey-10" rounded icon="camera_alt" label="Read QRCode"
         class="full-width" size="lg" @click="turnCameraOn()"
         v-show="!showCamera"/>
 
