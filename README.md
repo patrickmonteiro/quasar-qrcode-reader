@@ -19,6 +19,6 @@ quasar dev
 
 ### Prints
 
-<img src="https://github.com/patrickmonteiro/quasar-qrcode-reader/blob/master/docs/logo1.png?raw=true&"  height="400">
+<img src="https://github.com/patrickmonteiro/quasar-qrcode-reader/blob/master/docs/logo1.PNG?raw=true&"  height="400">
 
-<img src="https://github.com/patrickmonteiro/quasar-qrcode-reader/blob/master/docs/logo2.png?raw=true&"  height="400">
+<img src="https://github.com/patrickmonteiro/quasar-qrcode-reader/blob/master/docs/logo2.PNG?raw=true&"  height="400">
