@@ -1,6 +1,6 @@
 {
   "name": "quasar-qrcode-reader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Quasar Framework app",
   "productName": "Quasar QRCode Reader",
   "cordovaId": "org.cordova.quasar.app",
