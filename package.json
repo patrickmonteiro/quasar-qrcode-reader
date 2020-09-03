@@ -3,8 +3,7 @@
   "version": "0.0.2",
   "description": "A Quasar Framework app",
   "productName": "Quasar QRCode Reader",
-  "cordovaId": "org.cordova.quasar.app",
-  "author": "patryckx",
+  "author": "Patrick Monteiro <eng.patrickmonteiro@gmail.com>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
@@ -13,13 +12,14 @@
   "dependencies": {
     "@quasar/extras": "^1.9.5",
     "axios": "^0.18.1",
+    "core-js": "^3.6.5",
     "quasar": "^1.13.2",
-    "vue-i18n": "^8.0.0",
+    "vue-i18n": "^8.18.2",
     "vue-qrcode-reader": "^2.0.2",
     "vue-qriously": "^1.1.1"
   },
   "devDependencies": {
-    "@quasar/app": "^1.4.0",
+    "@quasar/app": "^2.0.9",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
@@ -27,11 +27,20 @@
     "eslint-plugin-vue": "^5.0.0"
   },
   "engines": {
-    "node": ">= 8.9.0",
-    "npm": ">= 5.6.0",
-    "yarn": ">= 1.6.0"
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
   },
   "browserslist": [
-    "last 1 version, not dead, ie >= 11"
+    "ie >= 11",
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
   ]
 }
