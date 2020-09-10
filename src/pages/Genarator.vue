@@ -12,6 +12,12 @@
       <div class="col-12 q-pt-md text-center">
         <qriously :value="text" :size="230" />
       </div>
+      <q-btn
+        color="blue-grey-10"
+        outline
+        label="Donwload"
+        @click="donwloadCanvas"
+      />
     </div>
   </q-page>
 </template>
@@ -22,6 +28,15 @@ export default {
   data () {
     return {
       text: 'https://github.com/patrickmonteiro'
+    }
+  },
+  methods: {
+    donwloadCanvas () {
+      const canvas = document.getElementsByTagName('canvas')
+      const link = document.createElement('a')
+      link.download = 'QRCode.png'
+      link.href = canvas[0].toDataURL()
+      link.click()
     }
   }
 }
