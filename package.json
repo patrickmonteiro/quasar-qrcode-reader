@@ -10,16 +10,16 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.9.5",
+    "@quasar/extras": "^1.9.10",
     "axios": "^0.18.1",
     "core-js": "^3.6.5",
-    "quasar": "^1.13.2",
+    "quasar": "^1.14.5",
     "vue-i18n": "^8.18.2",
     "vue-qrcode-reader": "^2.0.2",
     "vue-qriously": "^1.1.1"
   },
   "devDependencies": {
-    "@quasar/app": "^2.0.9",
+    "@quasar/app": "^2.1.8",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
