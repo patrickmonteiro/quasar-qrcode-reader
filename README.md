@@ -42,3 +42,8 @@ Caso meu algum de meus conteúdos tenha lhe ajudado de alguma forma e você quei
 <div style="text-align: center;">
  <img src="https://github.com/patrickmonteiro/patrickmonteiro/blob/main/assets/picpay.jpg?raw=true" width="300px">
 </div>
+
+### Pantreon
+
+- [Pantreon Patrick Monteiro](https://www.patreon.com/patrickmonteiroo)
+
