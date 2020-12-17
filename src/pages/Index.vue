@@ -1,17 +1,32 @@
 <template>
-  <q-page class="row full-height items-center">
-    <div class="col text-center">
-      <span class="text-subtitle1 text-grey-9">Press the button and scan a qrcode.</span>
-      <q-btn color="blue-grey-10" rounded icon="camera_alt" label="Read QRCode"
-        class="full-width" size="lg" @click="turnCameraOn()"
-        v-show="!showCamera"/>
+  <q-page>
+    <div class="row">
+      <div
+        v-if="!showCamera"
+        class="col-12 text-center q-pt-md"
+      >
+          <img
+          alt="Quasar logo"
+          src="/qr_code.svg"
+          style="width: 340px"
+        >
+      </div>
+    </div>
+    <div class="row justify-center q-pt-lg">
+       <div class="col-12 text-center">
+        <span class="text-subtitle2 text-grey-9">
+          {{ textInfo }}
+        </span>
+        <q-btn color="blue-grey-10" rounded icon="camera_alt" label="Read QRCode"
+          class="full-width" size="lg" @click="turnCameraOn()"
+          v-show="!showCamera"/>
 
-        <p class="text-subtitle1" v-if="result">Last result: <b>{{ result }}</b></p>
-        <div v-if="showCamera">
-
-          <qrcode-stream :camera="camera" @decode="onDecode">
-          </qrcode-stream>
-        </div>
+          <p class="text-subtitle1" v-if="result">Last result: <b>{{ result }}</b></p>
+          <div v-if="showCamera">
+            <qrcode-stream :camera="camera" @decode="onDecode">
+            </qrcode-stream>
+          </div>
+      </div>
     </div>
   </q-page>
 </template>
@@ -30,6 +45,11 @@ export default {
       camera: 'auto',
       result: null,
       showCamera: false
+    }
+  },
+  computed: {
+    textInfo () {
+      return this.showCamera ? 'position the qrcode on the camera' : 'Press the button and scan a qrcode.'
     }
   },
   methods: {
@@ -52,7 +72,7 @@ export default {
 </script>
 
 <style scoped>
-.validation-success,
+/* .validation-success,
 .validation-failure,
 .validation-pending {
   position: absolute;
@@ -74,5 +94,5 @@ export default {
 }
 .validation-failure {
   color: red;
-}
+} */
 </style>
