@@ -19,7 +19,7 @@
     "vue-qriously": "^1.1.1"
   },
   "devDependencies": {
-    "@quasar/app": "^2.1.12",
+    "@quasar/app": "^2.4.3",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
