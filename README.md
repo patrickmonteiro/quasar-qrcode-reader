@@ -43,7 +43,7 @@ Caso meu algum de meus conteúdos tenha lhe ajudado de alguma forma e você quei
  <img src="https://github.com/patrickmonteiro/patrickmonteiro/blob/main/assets/picpay.jpg?raw=true" width="300px">
 </div>
 
-### Pantreon
+### Patreon
 
-- [Pantreon Patrick Monteiro](https://www.patreon.com/patrickmonteiroo)
+- [Patreon Patrick Monteiro](https://www.patreon.com/patrickmonteiroo)
 
