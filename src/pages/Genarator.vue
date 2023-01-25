@@ -15,8 +15,8 @@
       <q-btn
         color="blue-grey-10"
         outline
-        label="Donwload"
-        @click="donwloadCanvas"
+        label="Download"
+        @click="downloadCanvas"
       />
     </div>
   </q-page>
@@ -31,7 +31,7 @@ export default {
     }
   },
   methods: {
-    donwloadCanvas () {
+    downloadCanvas () {
       const canvas = document.getElementsByTagName('canvas')
       const link = document.createElement('a')
       link.download = 'QRCode.png'
