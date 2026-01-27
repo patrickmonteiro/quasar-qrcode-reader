@@ -23,7 +23,5 @@ quasar dev
 
 <img src="https://github.com/patrickmonteiro/quasar-qrcode-reader/blob/master/docs/logo2.PNG?raw=true&"  height="400">
 
-### Pantreon
 
-- [Pantreon Patrick Monteiro](https://www.patreon.com/patrickmonteiroo)
 
