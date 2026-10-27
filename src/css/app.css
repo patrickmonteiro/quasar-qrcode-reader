@@ -1,0 +1,60 @@
+/* app global css */
+
+/* Identidade Pulsar Code (pulsarcode.com.br): preto/zinc + verde esmeralda. */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --q-primary: #10b981; /* emerald-500 */
+  --q-secondary: #71717a; /* zinc-500 */
+  --q-accent: #34d399; /* emerald-400 */
+
+  --q-dark: #18181b; /* zinc-900 */
+  --q-dark-page: #09090b; /* zinc-950 */
+
+  --q-positive: #22c55e;
+  --q-negative: #ef4444;
+  --q-info: #3b82f6;
+  --q-warning: #f59e0b;
+
+  --pulsar-sidebar-bg: #09090b;
+  --pulsar-border-radius: 12px;
+}
+
+body {
+  font-family:
+    'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.body--dark {
+  background: var(--q-dark-page);
+  color: #e4e4e7;
+}
+
+.text-h1,
+.text-h2,
+.text-h3,
+.text-h4,
+.text-h5,
+.text-h6,
+.font-display {
+  font-family: 'Archivo', 'Inter', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.q-btn,
+.q-card,
+.q-field__control,
+.q-chip {
+  border-radius: var(--pulsar-border-radius);
+}
+
+.pulsar-chrome {
+  background: var(--pulsar-sidebar-bg);
+  border-color: rgba(255, 255, 255, 0.08);
+}

@@ -1,46 +1,49 @@
 {
   "name": "quasar-qrcode-reader",
-  "version": "0.0.2",
-  "description": "A Quasar Framework app",
+  "version": "0.0.1",
+  "description": "A Quasar Project",
   "productName": "Quasar QRCode Reader",
   "author": "Patrick Monteiro <eng.patrickmonteiro@gmail.com>",
+  "type": "module",
   "private": true,
   "scripts": {
-    "lint": "eslint --ext .js,.vue src",
-    "test": "echo \"No test specified\" && exit 0"
+    "lint": "prettier --write \"**/*.{js,vue,css,html,md,json}\" --ignore-path .gitignore && eslint --fix -c ./eslint.config.js \"./src*/**/*.{js,cjs,mjs,vue}\"",
+    "lint:check": "prettier \"**/*.{js,vue,css,html,md,json}\" --ignore-path .gitignore && eslint -c ./eslint.config.js \"./src*/**/*.{js,cjs,mjs,vue}\"",
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "postinstall": "quasar prepare --silent"
   },
   "dependencies": {
-    "@quasar/extras": "^1.9.11",
-    "axios": "^0.18.1",
-    "core-js": "^3.6.5",
-    "quasar": "^1.14.7",
-    "vue-i18n": "^8.18.2",
-    "vue-qrcode-reader": "^2.0.2",
-    "vue-qriously": "^1.1.1"
+    "@quasar/extras": "^2.1.0",
+    "qrcode.vue": "^3.11.0",
+    "quasar": "^2.35.2",
+    "vue": "^3.5.22",
+    "vue-qrcode-reader": "^5.7.3",
+    "vue-router": "^5.0.6"
   },
   "devDependencies": {
-    "@quasar/app": "^2.1.12",
-    "@vue/eslint-config-standard": "^4.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.10.0",
-    "eslint-loader": "^2.1.1",
-    "eslint-plugin-vue": "^5.0.0"
+    "@eslint/js": "^10.0.1",
+    "@quasar/app-vite": "^3.10.3",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "autoprefixer": "^10.4.27",
+    "eslint": "^10.8.0",
+    "eslint-plugin-vue": "^10.8.0",
+    "globals": "^17.4.0",
+    "postcss": "^8.5.8",
+    "prettier": "^3.8.1",
+    "vite-plugin-checker": "^0.14.5",
+    "vue-eslint-parser": "^10.4.0"
   },
+  "keywords": [
+    "quasar",
+    "quasar-app",
+    "quasar-cli",
+    "quasar-app-vite",
+    "vite",
+    "vue",
+    "vuejs"
+  ],
   "engines": {
-    "node": ">= 10.18.1",
-    "npm": ">= 6.13.4",
-    "yarn": ">= 1.21.1"
-  },
-  "browserslist": [
-    "ie >= 11",
-    "last 10 Chrome versions",
-    "last 10 Firefox versions",
-    "last 4 Edge versions",
-    "last 7 Safari versions",
-    "last 8 Android versions",
-    "last 8 ChromeAndroid versions",
-    "last 8 FirefoxAndroid versions",
-    "last 10 iOS versions",
-    "last 5 Opera versions"
-  ]
+    "node": ">= 26 || ^24 || ^22.12"
+  }
 }
